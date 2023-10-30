@@ -5,7 +5,7 @@ public class Employee {
     double payRate, hoursWorked, overtimeHours;
     String name, department;
 
-    public Employee(int employeeID, double payRate, double hoursWorked, double overtimeHours, String name, String department) {
+    public Employee(int employeeID, double payRate, double hoursWorked, String name, String department) {
         this.employeeID = employeeID;
         this.payRate = payRate;
         this.hoursWorked = hoursWorked;
