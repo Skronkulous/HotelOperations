@@ -11,6 +11,12 @@ public class HotelOperations {
         System.out.println(emp2.getOvertimeHours());
         System.out.println(emp3.getOvertimeHours());
 
+        emp1.punchIn(12.5);
+        emp1.punchOut(8.75);
+        emp2.punchIn(2.2);
+        emp2.punchOut(14.5);
+        emp3.punchOut(4.5);
+
         System.out.println(emp1.totalPay());
         System.out.println(emp2.totalPay());
         System.out.println(emp3.totalPay());
