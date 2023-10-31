@@ -33,14 +33,11 @@ public class Employee {
     }
 
     public double getCurrentTimeDecimal(){
-        String punchInDateTime = String.valueOf(LocalDateTime.now());
-        String[] time = punchInDateTime.split("T");
-        String[] time2 = time[1].split("\\:");
-        double currentPunchTime = Double.valueOf(time2[0]) + (Double.valueOf(time2[1])/60);
-        return currentPunchTime;
+        return (LocalDateTime.now().getHour() +(double)LocalDateTime.now().getMinute()/60);
     }
     public void punchIn(double time){
         punchInTime = time;
+        punchOutTime = 0;
         System.out.println("You have successfully punched in!");
     }
     public void punchIn(){
